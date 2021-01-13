@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'Lato',sans-serif;
+    justify-content: center;
+    color: #333;
+    background-color: rgb(83, 85, 84);
+}
+
+  .container{
+    background: #4ec572;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+  }
+  
+  .title{
+    text-align: center;
+  }
+  
+  .status-action {
+    display: flex;
+    margin-top: 25px;
+    font-size: 25px;
+    justify-content: space-around;
+    height: 30px;
+  }
+  
+  .status span {
+    color: #F2EBD3;
+  }
+  
+  .reset,
+  .continue {
+    cursor: pointer;
+  }
+  
+  .reset:hover,
+  .continue:hover {
+    color: #F2EBD3;
+  }
+  
+  .game-grid {
+    background: #2e943f;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 50px;
+  }
+  
+  .game-cell {
+    background: #4ec572;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .x,
+  .o {
+    cursor: default;
+  }
+  
+  .x::after {
+    content: '×';
+    font-size: 150px;
+  }
+  
+  .o::after {
+    content: '○';
+    color: #F2EBD3;
+    font-size: 150px;
+    padding-bottom: 10px;
+  }
+  
+  .won::after {
+    color: #BD022F;
+  }
+
+  /* Score */
+
+  .score{
+      margin: 50px 40px;
+      padding: 30px;
+      background-color: rgb(197, 197, 241);
+      height: 250px;
+      border-radius: 25px;
+  }
+  .player-name{
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .score-box{
+      display: flex;
+      justify-content: space-around;    
+  }
+  
+  .score-box-x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height:60px;
+    width: 50px;
+    border: 1px solid black;
+    margin-right: 20px;
+
+  }
+
+  .score-box-o{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 60px;
+    width: 50px;
+    margin-left:20px;
+    border: 1px solid black;
+  }
+
+  .score-heading{
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 10px;
+      
+  }
+
+  .xName{
+      margin-right: 40px;
+      font-size: 50px;
+  }
+  .oName{
+      font-size: 50px;
+  }
