@@ -1,1 +1,1 @@
-Tic-Tac-Toe game made using Javescript.
+Tic-Tac-Toe game made using Javescript
